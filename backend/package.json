@@ -1,20 +1,30 @@
 {
   "name": "backend",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/LucasGaravaglia/Plataforma-missoes-Agrobot.git"
+  "devDependencies": {},
+  "dependencies": {
+    "@strapi/strapi": "4.1.9",
+    "@strapi/plugin-users-permissions": "4.1.9",
+    "@strapi/plugin-i18n": "4.1.9",
+    "better-sqlite3": "7.4.6"
   },
-  "author": "Lucas Garavaglia",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/LucasGaravaglia/Plataforma-missoes-Agrobot/issues"
+  "author": {
+    "name": "A Strapi developer"
   },
-  "homepage": "https://github.com/LucasGaravaglia/Plataforma-missoes-Agrobot#readme"
+  "strapi": {
+    "uuid": "ca95d734-5482-4876-9868-c090e7c249b9"
+  },
+  "engines": {
+    "node": ">=12.x.x <=16.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
 }
